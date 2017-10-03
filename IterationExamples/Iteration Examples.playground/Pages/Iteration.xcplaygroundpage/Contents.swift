@@ -4,10 +4,10 @@
 import Cocoa
 import PlaygroundSupport
 // Create canvas
-let canvas = Canvas(width: 360, height: 100)
+let canvas = Canvas(width: 360, height: 360)
 
 
-for i in stride(from: 0, through: 360, by: 1) {
+for i in stride(from: 0, through: 360, by: 20) {
     
     
     canvas.drawShapesWithBorders = false
@@ -15,7 +15,10 @@ for i in stride(from: 0, through: 360, by: 1) {
     
     
 // draw rec
-canvas.drawRectangle(bottomLeftX: i, bottomLeftY: 0, width: 1, height: 100)
+canvas.drawRectangle(bottomLeftX: i, bottomLeftY: 0, width: 20, height: 360)
+
+    
+    
 }
 
 
