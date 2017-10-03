@@ -15,6 +15,18 @@ import PlaygroundSupport
 let canvas = Canvas(width: 300, height: 300)
 
 
+for i in stride(from: 0, to: 300, by: 20) {
+    
+    canvas.lineColor = Color.init(hue: i, saturation: 100, brightness: 100, alpha: 100)
+
+    
+
+    canvas.drawLine(fromX: i, fromY: 0, toX: 300, toY: i)
+     canvas.drawLine(fromX: 300, fromY: i, toX: 300-i, toY: 300)
+      canvas.drawLine(fromX: 300-i, fromY: 300, toX: 0, toY: 300-i)
+     canvas.drawLine(fromX: 0, fromY: 300-i, toX: i, toY: 0)
+}
+
 
 
 
