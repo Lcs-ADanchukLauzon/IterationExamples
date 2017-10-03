@@ -14,7 +14,9 @@ import PlaygroundSupport
 // Create canvas
 let canvas = Canvas(width: 300, height: 300)
 
-// Below this line, try combining a loop and four statements that draw lines to generate the goal
+
+
+
 
 /*:
  ## Template code
