@@ -13,7 +13,7 @@ import PlaygroundSupport
 
 // Create canvas
 let canvas = Canvas(width: 300, height: 300)
-
+canvas.defaultLineWidth = 5
 
 for i in stride(from: 0, to: 300, by: 20) {
     
