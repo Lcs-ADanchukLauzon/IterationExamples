@@ -22,13 +22,13 @@ for x in stride(from: 25, through: 275, by: 50){
         var randomnum = random(from: 1, toButNotIncluding: 3)
         
         if randomnum == 1{
-        canvas.lineColor = Color.blue
+        canvas.lineColor = Color.init(hue: x, saturation: 100, brightness: 100, alpha: 100)
         canvas.rotate(by: -45)
         canvas.drawLine(fromX: 0, fromY: -35, toX: 0, toY: 35)
        canvas.rotate(by: 45)
             
         }else {
-            canvas.lineColor = Color.red
+          canvas.lineColor = Color.init(hue: x, saturation: 100, brightness: 100, alpha: 100)
             canvas.rotate(by: 45)
             canvas.drawLine(fromX: 0, fromY: -35, toX: 0, toY: 35)
             canvas.rotate(by: -45)
