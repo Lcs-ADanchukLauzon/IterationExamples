@@ -19,16 +19,16 @@ for x in stride(from: 25, through: 275, by: 50){
     for y in stride(from: 275, through: 25, by: -50){
        canvas.translate(byX: x, byY: y)
 
-        var randomnum = random(from: 1, toButNotIncluding: 3)
-        
+        let randomnum = random(from: 1, toButNotIncluding: 3)
+        let randomcolor = random(from: 0, toButNotIncluding: 361)
         if randomnum == 1{
-        canvas.lineColor = Color.init(hue: x, saturation: 100, brightness: 100, alpha: 100)
+        canvas.lineColor = Color.init(hue: randomcolor, saturation: 100, brightness: 100, alpha: 100)
         canvas.rotate(by: -45)
         canvas.drawLine(fromX: 0, fromY: -35, toX: 0, toY: 35)
        canvas.rotate(by: 45)
             
         }else {
-          canvas.lineColor = Color.init(hue: x, saturation: 100, brightness: 100, alpha: 100)
+          canvas.lineColor = Color.init(hue: randomcolor, saturation: 100, brightness: 100, alpha: 100)
             canvas.rotate(by: 45)
             canvas.drawLine(fromX: 0, fromY: -35, toX: 0, toY: 35)
             canvas.rotate(by: -45)
